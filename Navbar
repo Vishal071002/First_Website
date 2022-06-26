@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        /* background:url('https://cdn.pixabay.com/photo/2017/02/07/16/47/kingfisher-2046453__340.jpg')center center/cover; */
+        height: 110vh;
+      }
+      .container {
+        display: flex;
+        /* background-color: black; */
+      }
+      .nav {
+        list-style: none;
+        display: flex;
+        /* border: 2px solid black; */
+        width: 94%;
+        margin: 4px 3px;
+        padding: 3px 4px;
+        background-color: white;
+        border-radius: 22px;
+      }
+      .navi {
+        padding: 3px 19px;
+      }
+      .input {
+        border: 2px solid black;
+        /* display: block; */
+        float: right;
+        /* padding: 3px 4px; */
+        margin: 4px 3px;
+        border-radius: 22px;
+        text-align: center;
+      }
+      .input:hover {
+        /* cursor: pointer; */
+        /* border: 1px  solid rgb(202, 49, 49); */
+        /* background-color: black; */
+        color: white;
+        /* font-size: 17px; */
+        font-weight: bo ld;
+        /* border-radius: 12px; */
+
+      }
+      input[type="search"]{
+        color: green  ;
+      }
+      .navi:hover {
+        /* font-size: 17px; */
+        border-radius: 12px;
+
+        cursor: pointer;
+        /* border:   0.1px solid rgb(202, 49, 49); */
+        background-color: rgb(96, 194, 95);
+        color: white;
+        box-shadow: 2px 3px 2px green;
+      }
+      .cont {
+        display: flex;
+        position: relative;
+        border: 2px solid black;
+        width: 333px;
+        height: 333px;
+        /* justify-content: center; */
+        /* align-items: center; */
+        background-color: beige;
+        border-radius: 32px;
+
+        margin: auto;
+        margin-top: 90px;
+        transition: all;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+      }
+      .box {
+        width: 50px;
+        height: 50px;
+        animation-name: v1;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        position: relative;
+        border: 2px solid black;
+        border-radius: 222px;
+        background-color: blue;
+      }
+      
+
+      
+      @keyframes v1 {
+        0% {
+          top: 0px;
+          left: 0px;
+        }
+        25% {
+          top: 0px;
+          left: 283px;
+        }
+        50% {
+          top: 283px;
+          left: 283px;
+        }
+        75% {
+          top: 283px;
+          left: 0px;
+        }
+        100% {
+          top: 0px;
+          left: 0px;
+        }
+      }
+      .cont:hover {
+        border-color: chartreuse;
+        background-color: rgb(222, 29, 29);
+        cursor: pointer;
+        /* transform: translate(-200px); */
+        transform: rotate(360deg);
+      }
+      .bot {
+        width: 98vw;
+        height: 90px;
+        background-color: magenta;
+        margin-top: 12px;
+        border-radius: 222px;
+        text-align: center;
+      }
+      
+      
+      .box2 {
+        width: 90px;
+        height: 90px;
+        background-color: rgba(12, 12, 125, 8);
+        animation-name: v2;
+        animation-duration: 9s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        position: relative;
+        border-radius: 222px;
+      }
+      @keyframes v2 {
+        from {
+          width: 0px;
+        }
+        to {
+          width: 98vw;
+        }
+      }
+      @keyframes v2 {
+        0% {
+          top: 0px;
+          left: 0px;
+        }
+        25% {
+          top: 0px;
+          left: 283px;
+        }
+        50% {
+          top: 0px;
+          left: 583px;
+        }
+        75% {
+          top: 0px;
+          left: 999px;
+        }
+        100% {
+          top: 0px;
+          left: 1165px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <ul class="nav">
+          <li class="navi">Home</li>
+          <li class="navi">Services</li>
+          <li class="navi">About</li>
+          <li class="navi">Contact</li>
+        </ul>
+        <label for="search"></label>
+        <input
+          class="input"
+          type="search"
+          name="search"
+          id="search"
+          placeholder="search.."
+        />
+      </div>
+    </header>
+    <section>
+      <div class="cont">
+        <div class="box">
+
+            </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="bot">
+        <div class="box2"></div>
+      </div>
+    </footer>
+  </body>
+</html>
